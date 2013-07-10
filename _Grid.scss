@@ -77,7 +77,8 @@
  */
 
 .Grid-cell {
-  @include box-sizing(border-box);
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   width: 100%;
   display: inline-block; /* 1 */
   margin: 0;
