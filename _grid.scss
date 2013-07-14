@@ -3,6 +3,18 @@
    ========================================================================== */
 
 /**
+ * Variables
+ *
+ * It is recommended to override these.
+ *
+ * 1. Component namespace.
+ * 2. Grid gutter size.
+ */
+
+$bits-components-ns: 'bits-' !default; /* 1 */
+$bits-grid-gutter: 0 !default; /* 2 */
+
+/**
  * Core grid component
  * Make use of dimension utilities, or components that extend 'grid' in order
  * to apply particular widths to cells.
@@ -10,15 +22,15 @@
  * Example uses:
  *
  * <div class="Grid">
- *     <div class="Grid-cell u-size1of2"></div>
- *     <div class="Grid-cell u-size1of2"></div>
- *     <div class="Grid-cell u-size1of3"></div>
- *     <div class="Grid-cell u-size1of3"></div>
+ *   <div class="Grid-cell u-size1of2"></div>
+ *   <div class="Grid-cell u-size1of2"></div>
+ *   <div class="Grid-cell u-size1of3"></div>
+ *   <div class="Grid-cell u-size1of3"></div>
  * </div>
  *
  * <div class="Grid Grid--center">
- *     <div class="Grid-cell u-size1of3"></div>
- *     <div class="Grid-cell u-size1of3"></div>
+ *   <div class="Grid-cell u-size1of3"></div>
+ *   <div class="Grid-cell u-size1of3"></div>
  * </div>
  */
 
@@ -37,10 +49,10 @@
  * 3. Protect against WebKit bug with optimizelegibility.
  */
 
-.Grid {
+.#{$bits-components-ns}Grid {
   display: block;
   padding: 0;
-  margin: 0;
+  margin: 0 (-$bits-grid-gutter / 2);
   text-align: left; /* 1 */
   letter-spacing: -0.31em; /* 2 */
   text-rendering: optimizespeed; /* 3 */
@@ -49,17 +61,18 @@
 /* Opera hack */
 
 .opera:-o-prefocus,
-.Grid {
+.#{$bits-components-ns}Grid {
   word-spacing: -0.43em; /* 2 */
 }
 
 /**
  * Modifier: horizontally center all grid units
+ *
  * Allows for automatic unit centering irrespective of the number of
  * units in the grid.
  */
 
-.Grid--center {
+.#{$bits-components-ns}Grid--center {
   text-align: center;
 }
 
@@ -76,13 +89,13 @@
  * 4. Reset text defaults.
  */
 
-.Grid-cell {
+.#{$bits-components-ns}Grid-cell {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   width: 100%;
   display: inline-block; /* 1 */
   margin: 0;
-  padding: 0;
+  padding: 0 ($bits-grid-gutter / 2);
   vertical-align: top; /* 2 */
   text-align: left; /* 3 */
   letter-spacing: normal; /* 4 */
@@ -91,12 +104,13 @@
 }
 
 /**
- * Modifier: horizontally center one unit
+ * Child object modifier: horizontally center one unit
+ *
  * Set a specific unit to be horizontally centered. Doesn't affect
  * any other units. Can still contain a child `Grid` object.
  */
 
-.Grid-cell--center {
+.#{$bits-components-ns}Grid-cell--center {
   display: block;
   margin: 0 auto;
 }
