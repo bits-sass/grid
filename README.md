@@ -1,19 +1,19 @@
-# Bits.scss grid
+# Bits.sass grid
 
 Component for a CSS grid. The grid makes use of `inline-block` and
 `box-sizing` to provide features that float-based layouts cannot.
 
 N.B. This component relies on particular dimensions being applied to cells in
-the grid via other classes. For example, [Bits.scss dimension](https://github.com/bits-scss/utils-dimension)
-or the [Bits.scss grid layouts](https://github.com/bits-scss/grid-layouts) extension.
+the grid via other classes. For example, [Bits.sass dimension](https://github.com/bits-sass/utils-dimension)
+or the [Bits.sass grid layouts](https://github.com/bits-sass/grid-layouts) extension.
 
-Read more about [Bits.scss toolkit](https://github.com/bits-scss/bits.scss).
+Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 
 ## Installation
 
-* __Bower:__ `bower install --save bits-scss-grid`
-* __Download:__ [zip](https://github.com/bits-scss/grid/zipball/master), [tar.gz](https://github.com/bits-scss/grid/tarball/master)
-* __Git:__ `git clone https://github.com/bits-scss/grid.git`
+* __Bower:__ `bower install --save bits-sass-grid`
+* __Download:__ [zip](https://github.com/bits-sass/grid/zipball/master), [tar.gz](https://github.com/bits-sass/grid/tarball/master)
+* __Git:__ `git clone https://github.com/bits-sass/grid.git`
 
 ## Available SASS variables
 
