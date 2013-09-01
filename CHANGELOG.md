@@ -1,5 +1,7 @@
 === HEAD
 
+* Remove `bits-grid-gutter` var as it is useless
+
 === 0.2.1 (July 20, 2013)
 
 * Rename organization's name to 'Bits.sass'

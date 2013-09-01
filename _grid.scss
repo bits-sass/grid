@@ -8,11 +8,9 @@
  * It is recommended to override these.
  *
  * 1. Component namespace.
- * 2. Grid gutter size.
  */
 
 $bits-components-ns: 'bits-' !default; /* 1 */
-$bits-grid-gutter: 0 !default; /* 2 */
 
 /**
  * Core grid component
@@ -52,7 +50,7 @@ $bits-grid-gutter: 0 !default; /* 2 */
 .#{$bits-components-ns}Grid {
   display: block;
   padding: 0;
-  margin: 0 (-$bits-grid-gutter / 2);
+  margin: 0;
   text-align: left; /* 1 */
   letter-spacing: -0.31em; /* 2 */
   text-rendering: optimizespeed; /* 3 */
@@ -95,7 +93,7 @@ $bits-grid-gutter: 0 !default; /* 2 */
   width: 100%;
   display: inline-block; /* 1 */
   margin: 0;
-  padding: 0 ($bits-grid-gutter / 2);
+  padding: 0;
   vertical-align: top; /* 2 */
   text-align: left; /* 3 */
   letter-spacing: normal; /* 4 */
