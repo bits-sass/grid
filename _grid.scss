@@ -74,6 +74,15 @@ $bits-components-ns: 'bits-' !default; /* 1 */
   text-align: center;
 }
 
+/**
+ * Modifier: vertically center all grid units
+ */
+
+.#{$bits-components-ns}Grid--middle {
+  .#{$bits-components-ns}Grid-cell {
+    vertical-align: middle;
+  }
+}
 /* Grid cell
    ========================================================================== */
 
