@@ -5,6 +5,7 @@ Component for a CSS grid. The grid makes use of `inline-block` and
 
 N.B. This component relies on particular dimensions being applied to cells in
 the grid via other classes. For example, [Bits.sass dimension](https://github.com/bits-sass/utils-dimension).
+If you need gutters inbetween cells, see [Bits.sass space](https://github.com/bits-sass/utils-space).
 
 Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 
