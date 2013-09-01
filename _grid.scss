@@ -39,8 +39,7 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  * </div>
  */
 
-/* Grid container
-   ========================================================================== */
+/* -------------------------------------------------------------------------- */
 
 /**
  * Must only contain `Grid` or `Grid-cell` components as children.
@@ -103,10 +102,7 @@ $bits-components-ns: 'bits-' !default; /* 1 */
   }
 }
 
-
-
-/* Grid cell
-   ========================================================================== */
+/* -------------------------------------------------------------------------- */
 
 /**
  * No explicit width by default. Rely on combining `Grid-cell` with a dimension
