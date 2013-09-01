@@ -12,12 +12,19 @@
 
 $bits-components-ns: 'bits-' !default; /* 1 */
 
+/* -------------------------------------------------------------------------- */
+
 /**
  * Core grid component
+ *
  * Make use of dimension utilities, or components that extend 'grid' in order
  * to apply particular widths to cells.
  *
- * Example uses:
+ * Make use of space utilities in order to apply gutter between cells.
+ *
+ * --------------
+ * Example usage:
+ * --------------
  *
  * <div class="Grid">
  *   <div class="Grid-cell u-size1of2"></div>
@@ -62,6 +69,8 @@ $bits-components-ns: 'bits-' !default; /* 1 */
 .#{$bits-components-ns}Grid {
   word-spacing: -0.43em; /* 2 */
 }
+
+/* -------------------------------------------------------------------------- */
 
 /**
  * Modifier: horizontally center all grid units
