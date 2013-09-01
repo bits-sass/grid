@@ -83,6 +83,19 @@ $bits-components-ns: 'bits-' !default; /* 1 */
     vertical-align: middle;
   }
 }
+
+/**
+ * Modifier: vertically align all grid units to bottom
+ */
+
+.#{$bits-components-ns}Grid--bottom {
+  .#{$bits-components-ns}Grid-cell {
+    vertical-align: bottom;
+  }
+}
+
+
+
 /* Grid cell
    ========================================================================== */
 
