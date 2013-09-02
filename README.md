@@ -23,12 +23,12 @@ Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 ## Available classes
 
 * `Grid` - core grid component
-* `Grid--center` - horizontally centers all grid units
-* `Grid--middle` - vertically aligns all grid units to middle
-* `Grid--bottom` - vertically aligns all grid units to bottom
-* `Grid-cell` - sub-object class reprezenting a unit
-* `Grid-cell--center` - horizontally centers one unit
+* `Grid--center` - horizontally center all grid units
+* `Grid--middle` - vertically align all grid units to middle
+* `Grid--bottom` - vertically align all grid units to bottom
 * `Grid--[n]col` - (adjustable) grid of `n` columns
+* `Grid-cell` - descendant class representing a unit
+* `Grid-cell--center` - horizontally center one unit
 
 ## Features
 
@@ -74,14 +74,6 @@ Or individual cells can be centered on their own line by adding the
   <div class="Grid-cell u-size1of2"></div>
   <div class="Grid-cell Grid-cell--center u-size3of4"></div>
 </div>
-```
-
-The core grid component includes no gutters by default.
-
-If you need a gutter of, for example, 10px, set the appropriate variable:
-
-```scss
-$bits-grid-gutter: 10px;
 ```
 
 ## Requirements
