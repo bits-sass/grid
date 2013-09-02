@@ -23,6 +23,8 @@ Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 
 * `Grid` - core grid component
 * `Grid--center` - horizontally centers all grid units
+* `Grid--middle` - vertically aligns all grid units to middle
+* `Grid--bottom` - vertically aligns all grid units to bottom
 * `Grid-cell` - sub-object class reprezenting a unit
 * `Grid-cell--center` - horizontally centers one unit
 
