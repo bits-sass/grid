@@ -3,6 +3,7 @@
 * Remove `bits-grid-gutter` var as it is useless
 * Add `Grid--middle` modifier for vertical alignment
 * Add `Grid--bottom` modifier for vertical alignment
+* Reorder properties
 
 === 0.2.1 (July 20, 2013)
 
