@@ -119,7 +119,7 @@ $bits-grid-columns: (2 3 4) !default;
  */
 
 .#{$bits-components-ns}Grid--middle {
-  .#{$bits-components-ns}Grid-cell {
+  > .#{$bits-components-ns}Grid-cell {
     vertical-align: middle;
   }
 }
@@ -129,7 +129,7 @@ $bits-grid-columns: (2 3 4) !default;
  */
 
 .#{$bits-components-ns}Grid--bottom {
-  .#{$bits-components-ns}Grid-cell {
+  > .#{$bits-components-ns}Grid-cell {
     vertical-align: bottom;
   }
 }
