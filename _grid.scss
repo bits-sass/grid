@@ -3,18 +3,6 @@
    ========================================================================== */
 
 /**
- * Variables
- *
- * It is recommended to override these.
- *
- * 1. Component namespace.
- */
-
-$bits-components-ns: 'bits-' !default; /* 1 */
-
-/* -------------------------------------------------------------------------- */
-
-/**
  * Core grid component
  *
  * Make use of dimension utilities, or components that extend 'grid' in order
@@ -22,9 +10,7 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  *
  * Make use of space utilities in order to apply gutter between cells.
  *
- * --------------
- * Example usage:
- * --------------
+ * Example HTML:
  *
  * <div class="Grid">
  *   <div class="Grid-cell u-size1of2"></div>
@@ -39,7 +25,17 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  * </div>
  */
 
-/* -------------------------------------------------------------------------- */
+/* Variables
+   ========================================================================== */
+
+/**
+ * Bits.sass components namespace
+ */
+
+$bits-components-ns: 'bits-' !default;
+
+/* Component
+   ========================================================================== */
 
 /**
  * Must only contain `Grid` or `Grid-cell` components as children.
@@ -70,40 +66,8 @@ $bits-components-ns: 'bits-' !default; /* 1 */
   word-spacing: -0.43em; /* 3 */
 }
 
-/* -------------------------------------------------------------------------- */
-
-/**
- * Modifier: horizontally center all grid units
- *
- * Allows for automatic unit centering irrespective of the number of
- * units in the grid.
- */
-
-.#{$bits-components-ns}Grid--center {
-  text-align: center;
-}
-
-/**
- * Modifier: vertically center all grid units
- */
-
-.#{$bits-components-ns}Grid--middle {
-  .#{$bits-components-ns}Grid-cell {
-    vertical-align: middle;
-  }
-}
-
-/**
- * Modifier: vertically align all grid units to bottom
- */
-
-.#{$bits-components-ns}Grid--bottom {
-  .#{$bits-components-ns}Grid-cell {
-    vertical-align: bottom;
-  }
-}
-
-/* -------------------------------------------------------------------------- */
+/* Descendants
+   ========================================================================== */
 
 /**
  * No explicit width by default. Rely on combining `Grid-cell` with a dimension
@@ -118,19 +82,57 @@ $bits-components-ns: 'bits-' !default; /* 1 */
 .#{$bits-components-ns}Grid-cell {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  width: 100%;
   display: inline-block; /* 1 */
   margin: 0;
   padding: 0;
+  width: 100%;
   vertical-align: top; /* 2 */
+
   text-align: left; /* 3 */
+  text-rendering: auto; /* 4 */
   letter-spacing: normal; /* 4 */
   word-spacing: normal; /* 4 */
-  text-rendering: auto; /* 4 */
+}
+
+/* Component modifiers
+   ========================================================================== */
+
+/**
+ * Horizontally center all grid units
+ *
+ * Allows for automatic unit centering irrespective of the number of
+ * units in the grid.
+ */
+
+.#{$bits-components-ns}Grid--center {
+  text-align: center;
 }
 
 /**
- * Child object modifier: horizontally center one unit
+ * Vertically center all grid units
+ */
+
+.#{$bits-components-ns}Grid--middle {
+  .#{$bits-components-ns}Grid-cell {
+    vertical-align: middle;
+  }
+}
+
+/**
+ * Vertically align all grid units to bottom
+ */
+
+.#{$bits-components-ns}Grid--bottom {
+  .#{$bits-components-ns}Grid-cell {
+    vertical-align: bottom;
+  }
+}
+
+/* Descendants modifiers
+   ========================================================================== */
+
+/**
+ * Horizontally center one unit
  *
  * Set a specific unit to be horizontally centered. Doesn't affect
  * any other units. Can still contain a child `Grid` object.

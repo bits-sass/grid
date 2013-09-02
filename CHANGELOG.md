@@ -4,6 +4,7 @@
 * Add `Grid--middle` modifier for vertical alignment
 * Add `Grid--bottom` modifier for vertical alignment
 * Reorder properties
+* Use new style for comments
 
 === 0.2.1 (July 20, 2013)
 
