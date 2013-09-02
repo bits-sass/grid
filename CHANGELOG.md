@@ -1,5 +1,7 @@
 === HEAD
 
+* Add `bits-grid-columns` var and `Grid--[n]col` modifiers
+
 === 0.3.0 (September 2, 2013)
 
 * Remove `bits-grid-gutter` var as it is useless

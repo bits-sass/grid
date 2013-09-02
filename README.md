@@ -18,6 +18,7 @@ Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 ## Available SASS variables
 
 * `bits-components-ns` - components namespace, defaults to 'bits-'
+* `bits-grid-columns` - list of generated columns
 
 ## Available classes
 
@@ -27,6 +28,7 @@ Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 * `Grid--bottom` - vertically aligns all grid units to bottom
 * `Grid-cell` - sub-object class reprezenting a unit
 * `Grid-cell--center` - horizontally centers one unit
+* `Grid--[n]col` - (adjustable) grid of `n` columns
 
 ## Features
 

@@ -34,6 +34,12 @@
 
 $bits-components-ns: 'bits-' !default;
 
+/**
+ * A list of generated columns
+ */
+
+$bits-grid-columns: (2 3 4) !default;
+
 /* Component
    ========================================================================== */
 
@@ -127,6 +133,17 @@ $bits-components-ns: 'bits-' !default;
     vertical-align: bottom;
   }
 }
+
+/* Grid columns generator */
+
+@each $n in $bits-grid-columns {
+  .#{$bits-components-ns}Grid--#{$n}col {
+    > .#{$bits-components-ns}Grid-cell {
+      width: percentage(1 / $n);
+    }
+  }
+}
+
 
 /* Descendants modifiers
    ========================================================================== */
