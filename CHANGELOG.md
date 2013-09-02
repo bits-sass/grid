@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.3.0 (September 2, 2013)
+
 * Remove `bits-grid-gutter` var as it is useless
 * Add `Grid--middle` modifier for vertical alignment
 * Add `Grid--bottom` modifier for vertical alignment
