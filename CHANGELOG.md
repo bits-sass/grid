@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.4.0 (September 3, 2013)
+
 * Add `bits-grid-columns` var and `Grid--[n]col` modifiers
 * Add child selectors
 
